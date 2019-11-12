@@ -1,0 +1,22 @@
+{
+    "presets":["es2015","react"],
+    "plugins": [
+	    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+	],
+    "env": {
+	    "development": {
+	        "plugins": [
+	        	["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }],
+	          	["react-transform", {
+	           		"transforms": [{
+	             		"transform": "react-transform-hmr",
+	             		"imports": ["react"],
+	           	  		"locals": ["module"]
+	           		}]
+	         	}]
+	       ]
+	    }
+   }
+}
+
+
